@@ -21,7 +21,7 @@ int main()
 
 
     nlohmann::json j = EigenJSONSerialization::toJSON( D );
-    std::cout <<  "---Serialized :\n" << j << std::endl;
+    std::cout <<  "---Serialized D:\n" << j << std::endl;
     
 
     Eigen::MatrixXd U;
@@ -30,6 +30,11 @@ int main()
 
 
 
+    Eigen::Matrix3d po = Eigen::Matrix3d::Identity();
+    nlohmann::json j_mat3d = EigenJSONSerialization::toJSON( po );
+    std::cout <<  "---Serialized po:\n" << j_mat3d << std::endl;
 
 
+    
+    
 }

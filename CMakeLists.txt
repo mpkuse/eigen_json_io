@@ -22,4 +22,10 @@ target_link_libraries( test_1 ${catkin_LIBRARIES} )
 
 add_executable( test_2 test/2.cc )
 target_link_libraries( test_2 ${catkin_LIBRARIES} )
+
+add_executable( test_3 test/3.cc )
+target_link_libraries( test_3 ${catkin_LIBRARIES} )
+
+add_executable( test_4 test/4.cc )
+target_link_libraries( test_4 ${catkin_LIBRARIES} )
 #######################
