@@ -16,7 +16,7 @@ int main()
 {
     std::cout << "Eigen --> JSON\n";
     Eigen::MatrixXd D = Eigen::MatrixXd::Random( 2, 5 );
-    std::cout << "---Input Matrix D:\n" << D << std::endl;
+    std::cout << "---Input Matrix D (shape=" << EigenFileHelpers::matrixShape(D) << "):\n" << D << std::endl;
 
 
 

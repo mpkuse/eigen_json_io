@@ -53,6 +53,14 @@ class EigenFileHelpers
         inpfile >> j;
         return j; 
     }
+
+    template <typename Derived>
+    static std::string matrixShape( const Eigen::MatrixBase<Derived>& a )
+    {
+        std::stringstream ss; 
+        ss << a.rows() << "x" << a.cols() ;
+        return ss.str(); 
+    }
 };
 
 
